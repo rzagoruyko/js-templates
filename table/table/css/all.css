@@ -1,0 +1,126 @@
+html,
+body {
+	min-width:320px;
+}
+body {
+	margin:0;
+	background:#fff;
+	font:13px Arial, Helvetica, sans-serif;
+	color:#010101;
+}
+mark {
+	color:#00f
+}
+img {border-style:none;}
+a {
+	text-decoration:underline;
+	color:#000;
+}
+a:hover {text-decoration:none;}
+input,
+textarea,
+select{
+	font:100% arial,sans-serif;
+	vertical-align:middle;
+}
+form,
+fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+details, summary, header, footer, article, section, hgroup, nav, figure { display: block; }
+#main {
+	padding:20px;
+	max-width:1000px;
+	margin:0 auto;
+}
+.table {
+	border-collapse:collapse;
+	padding:0;
+	margin:0 0 10px;
+	width:100%;
+}
+
+.table  tr:nth-child(odd) td {
+	background-color: rgba(0,0,0,0.4);
+}
+.table td,
+.table  th {
+	border:1px solid #f00;
+	padding: 5px 10px;
+}
+.table  th {
+	color:#fff;
+	font-weight:normal;
+	background:#333;
+	font-weight:bold;
+	text-align:center;
+}
+
+.top *{
+	vertical-align:top !important;
+}
+
+@media only screen and (max-width:676px){
+	.table {
+		width:100%;
+		overflow:hidden;
+		border-top:1px solid #f00;
+	}
+	.table tbody,
+	.table td,
+	.table tr,
+	.table {
+		display:block;
+	}
+	.table tbody {
+		display:block;
+		border-left:140px solid #333;
+		float:left;
+		width:100%;
+		padding:0 1px 0 1px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		background:#f00;
+	}
+	.table tr {
+		float:left;
+		width:100%;
+		background:#fff;
+		clear:both;
+	}
+	.table td {
+		padding:0 0 0 140px;
+		margin:0 -1px 0 -141px;
+		float:left;
+		clear:both;
+		width:100%;
+		white-space:nowrap;
+		border-top:0;
+	}
+	.table td:before {
+		content:attr(data-label);
+		padding: 5px 10px;
+		display:inline-block;
+		color:#fff !important;
+		font-weight:bold;
+		width:120px;
+		vertical-align:middle;
+		margin:0 0 0 -140px;
+		position:relative;
+		white-space:normal;
+	}
+	.table td span {
+		white-space:normal;
+		display:inline-block;
+		vertical-align:middle;
+		padding:5px 10px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.table thead,
+	.table  thead {display:none;}
+}

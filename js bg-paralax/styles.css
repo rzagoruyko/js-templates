@@ -1,0 +1,26 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.full-view{
+  height:100vh;
+}
+
+.paralax{
+  position: relative;
+  overflow: hidden;
+}
+
+.visual{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  transition: transform .3s ease-out;
+  -moz-transition: transform .3s ease-out;
+  -webkit-transition:transform .3s ease-out;
+  z-index: -1;
+}

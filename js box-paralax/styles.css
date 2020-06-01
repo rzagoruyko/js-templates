@@ -1,0 +1,84 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.full-view-boxes{
+  height:100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.full-view-boxes .box{
+  position: absolute;
+}
+
+.full-view-boxes .anim-box{
+  position: relative;
+  transition: transform .1s ease-out;
+  -moz-transition: transform .1s ease-out;
+  -webkit-transition:transform .1s ease-out;
+}
+
+.full-view-boxes .anim-box{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background:#f00;
+}
+
+.simple-boxes .anim-box{
+  width:17%;
+  height:100px;
+  background:#f00;
+  display: inline-block;
+  vertical-align: top;
+  position:relative;
+}
+
+.big-box-holder{
+  position: relative;
+  background: #1f5d00;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.big-box-holder .anim-box{
+  float: left;
+  width: 50%;
+  height:300px;
+  background:#e1ffbb;
+  position:relative;
+  transition: transform .2s ease-out;
+  -moz-transition: transform .2s ease-out;
+  -webkit-transition:transform .2s ease-out;
+}
+
+.panorama{
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fff683;
+}
+
+.panorama .box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.panorama .anim-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transition: transform .3s ease-out;
+  -moz-transition: transform .3s ease-out;
+  -webkit-transition:transform .3s ease-out;
+}

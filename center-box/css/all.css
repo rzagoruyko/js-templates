@@ -1,0 +1,32 @@
+body{
+	margin:0;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#000;
+	background:#fff;
+}
+.block{
+	position:relative;
+	width:300px;
+	height:300px;
+	margin:20px auto 0;
+	background:#ccc;
+}
+.block .box{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	width:100px;
+	height:100px;
+	background:#a53636;
+}
+.block img{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}

@@ -1,0 +1,28 @@
+.box{
+	width: 40px;
+	height: 40px;
+	background: #ccc;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.box.current{
+	background: #00c711;
+}
+
+.mark-position {
+  position: relative;
+  z-index: 1;
+}
+
+ @media (max-width: 1023px) {
+  .mark-position {
+    z-index: 2;
+  } 
+}
+
+@media (max-width: 767px) {
+  .mark-position {
+    z-index: 3;
+ 	}
+}

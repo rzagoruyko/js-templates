@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Mail Sending Demo</title>
+	<link rel="stylesheet" href="css/all.css" type="text/css"/>
+</head>
+<body>
+<div id="page">
+	<!-- example form 1 -->
+	<div class="mail-form">
+		<h1>Пример 1: простая отправка формы на почту</h1>
+		<form action="mail1.php" method="post">
+			<fieldset>
+				<div class="row">
+					<label>First Name:</label>
+					<input type="text" name="ufname" class="text" />
+				</div>
+				<div class="row">
+					<label>Last Name:</label>
+					<input type="text" name="ulname" class="text" />
+				</div>
+				<div class="row">
+					<label>Phone:</label>
+					<input type="text" name="uphone" class="text" />
+				</div>
+				<div class="row">
+					<label>Email:</label>
+					<input type="text" name="umail" class="text" />
+				</div>
+				<div class="row">
+					<label>Message:</label>
+					<textarea name="umessage" cols="30" rows="5"></textarea>
+				</div>
+				<div class="row">
+					<input type="submit" value="Submit!"/>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<!-- example form 2 -->
+	<div class="mail-form">
+		<h1>Пример 2: отправка формы с checkbox/radio на почту</h1>
+		<form action="mail2.php" method="post">
+			<fieldset>
+				<div class="row">
+					<label>First Name:</label>
+					<input type="text" name="ufname" class="text" />
+				</div>
+				<div class="row">
+					<label>Message:</label>
+					<textarea name="umessage" cols="30" rows="5"></textarea>
+				</div>
+				<div class="row">
+					<strong>Select gender:</strong>
+					<div class="holder">
+						<label><input type="radio" class="radio" name="gender" value="I'm a man" checked="checked" /> Male</label>
+						<label><input type="radio" class="radio" name="gender" value="I'm a woman" /> Female</label>
+					</div>
+				</div>
+					<div class="row">
+					<strong>Interests:</strong>
+					<div class="holder">
+						<label><input type="checkbox" class="checkbox" name="interests[]" value="woman" /> Woman</label>
+						<label><input type="checkbox" class="checkbox" name="interests[]" value="gadgets" /> Gadgets</label>
+						<label><input type="checkbox" class="checkbox" name="interests[]" value="fishing" /> Fishing</label>
+						<label><input type="checkbox" class="checkbox" name="interests[]" value="sports" /> Sports</label>
+					</div>
+				</div>
+				<div class="row">
+					<input type="submit" value="Submit!"/>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<!-- example form 3 -->
+	<div class="mail-form">
+		<h2>Пример 3: отправка формы на почту с вложениями</h2>
+		<form action="mail3.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<div class="row">
+					<label>First Name:</label>
+					<input type="text" name="ufname" class="text" />
+				</div>
+				<div class="row">
+					<label>Last Name:</label>
+					<input type="text" name="ulname" class="text" />
+				</div>
+				<div class="row">
+					<label>Phone:</label>
+					<input type="text" name="uphone" class="text" />
+				</div>
+				<div class="row">
+					<label>Email:</label>
+					<input type="text" name="umail" class="text" />
+				</div>
+				<div class="row">
+					<label>Message:</label>
+					<textarea name="umessage" cols="30" rows="5"></textarea>
+				</div>
+				<div class="row">
+					<label>Attachment 1:</label>
+					<input type="file" class="file" name="ufiles[0]" size="30" />
+				</div>
+				<div class="row">
+					<label>Attachment 2:</label>
+					<input type="file" class="file" name="ufiles[1]" size="30" />
+				</div>
+				<div class="row">
+					<input type="submit" value="Submit!"/>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+</body>
+</html>

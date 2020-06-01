@@ -1,0 +1,39 @@
+.section{
+	position: relative;
+	background: #000;
+	overflow: hidden;
+}
+
+.section p{
+	margin: 0;
+}
+
+.section.dark{
+	background: #ccc;
+}
+
+.section.white{
+	background: #fff;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background: #fcc;
+	z-index: 10;
+	transition: background .3s ease;
+	-moz-transition: background .3s ease;
+	-webkit-transition:background .3s ease;
+	opacity: .9;
+}
+
+.header.dark-header{
+	background: #ccc;
+}
+
+.header.white-header{
+	background: #fff;
+}

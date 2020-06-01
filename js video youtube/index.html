@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+  <script type="text/javascript">window.jQuery || document.write('<script src="jquery-3.2.1.min.js"><\/script>')</script>
+  <script type="text/javascript" src="jquery.main.js" defer></script>
+</head>
+<body>
+  <div class="video-box">
+    <iframe id="player" src="https://www.youtube.com/embed/ctvlUvN6wSE" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+    <a href="#" class="play-btn">play</a>
+    <a href="#" class="pause-btn">pause</a>
+    <a href="#" class="stop-btn">stop</a>
+  </div>
+  <div class="custom-video-box">
+    <iframe id="player2" src="" data-src="https://www.youtube.com/embed/ctvlUvN6wSE" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+    <a href="#" class="custom-play visible">
+      <span class="custom-btn">play</span>
+    </a>
+  </div>
+  <h2 style="text-align:center;">Load video after play</h2>
+</body>

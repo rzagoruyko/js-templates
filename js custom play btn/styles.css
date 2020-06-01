@@ -1,0 +1,15 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.youtube iframe{
+  width: 100%;
+}
+
+.youtube-play{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #f00;
+}

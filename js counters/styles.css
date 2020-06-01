@@ -1,0 +1,9 @@
+.counter-load,
+.counter-scroll{
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 5px;
+	background: #fc0;
+	text-align: center;
+	font: 50px/1.2 Arial, Helvetica, sans-serif;
+}

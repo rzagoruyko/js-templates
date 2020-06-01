@@ -1,0 +1,72 @@
+.filter-nav{
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.filter-nav li{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter-nav a{
+  display: block;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.filter-nav a:hover{
+  background: #ccc;
+}
+
+.filter-nav li.active a{
+  background: #ccc;
+}
+
+.filter-boxes{
+  position: relative;
+}
+
+.filter-box{
+  width: 200px;
+  height: 200px;
+  margin: 0 4px 12px;
+  color: #ccc;
+  text-align: center;
+  font-size: 20px;
+  display: none;
+  box-sizing: border-box;
+}
+
+.filter-box.show{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.small{
+  width: 100px;
+  height: 100px;
+}
+
+.special{
+  border: 5px solid #000;
+}
+
+.red{
+  background: red;
+}
+
+.yellow{
+  background: yellow;
+}
+
+.green{
+  background: green;
+}
+
+.black{
+  background: black;
+}

@@ -1,0 +1,47 @@
+.drag-image{
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+	/*border: 5px solid #08e3ff;*/
+}
+
+.front{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+	overflow: hidden;
+	z-index: 2;
+	background:#ccc;
+}
+
+.back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 1;
+	background:#000;
+}
+
+.inner-area{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.slider{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	bottom: 0;
+	width: 8px;
+	background: #f00;
+	z-index: 3;
+	cursor: pointer;
+	transform: translateX(-50%);
+}

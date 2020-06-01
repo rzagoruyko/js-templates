@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.banner-video {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 0 0 15px;
+  width: 300px;
+}
+
+.banner-video:hover img,
+.banner-video:hover .anim-area {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.banner-video:hover .custom-progress {
+  opacity: 1;
+}
+
+.anim-area {
+  -webkit-transition: filter .3s ease-out,
+    opacity .3s ease-out;
+  transition: filter .3s ease-out,
+    opacity .3s ease-out;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: grayscale(100%);
+  opacity: .8;
+}
+
+.banner-video video {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.banner-video video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+.custom-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+  height: 15px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .6s ease-out;
+  transition: opacity .6s ease-out;
+}
+
+.custom-progress:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #dcdcdc;
+  z-index: -1;
+}
+
+.line {
+  background: #0286db;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 3px;
+  width: 0;
+}
+
+.play {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity .1s ease-out;
+  transition: opacity .1s ease-out;
+  background: #0086da;
+  border-radius: 50%;
+  z-index: 2;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  padding: 14px 0 0;
+  text-align: center;
+}
+
+.banner-video.playing .anim-area {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.banner-video.playing .play {
+  display: none;
+}
+
+.banner-video.playing .custom-progress {
+  opacity: 1;
+}

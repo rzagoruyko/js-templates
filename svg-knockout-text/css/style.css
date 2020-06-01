@@ -1,0 +1,15 @@
+body {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #000;
+}
+
+.hero {
+  background: url('https://cldup.com/3C4jPPgf0E.jpg');
+  background-size: cover;
+  padding: 20% 0;
+}
+
+svg {
+  display: block;
+}

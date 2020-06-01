@@ -1,0 +1,33 @@
+body{
+	margin:0;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#000;
+	background:#fff;
+}
+img{border-style:none;}
+a{
+	color:#000;
+	text-decoration:none;
+}
+a:hover{text-decoration:underline;}
+a:active{background-color:transparent;}
+#wrapper{padding:20px;}
+.item{
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+}
+.item:before{
+	content:'';
+	position:absolute;
+	bottom:-20px;
+	left:0;
+	right:0;
+	width:30px;
+	height:30px;
+	border-radius:15px;
+	background:#f00;
+	margin:auto;
+	
+	clip:rect(15px, auto, auto, auto);
+}
